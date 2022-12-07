@@ -18,7 +18,7 @@ struct ContentView: View {
                     Text("Track")
                 }).padding(6)
                 Button(action: {
-                    Analytics.main.screen(title: "Screen appeared")
+                    Analytics.main.screen(title: "Screen")
                 }, label: {
                     Text("Screen")
                 }).padding(6)
@@ -31,7 +31,8 @@ struct ContentView: View {
                     Text("Group")
                 }).padding(6)
                 Button(action: {
-                    Analytics.main.identify(userId: "X-1234567890")
+                    Analytics.main.identify(userId: "123457", traits: ["email": "<Logged In User Email>", "name": "<Logged In User name>"])
+
                 }, label: {
                     Text("Identify")
                 }).padding(6)

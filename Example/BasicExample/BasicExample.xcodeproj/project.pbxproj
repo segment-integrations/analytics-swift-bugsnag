@@ -15,6 +15,7 @@
 		46EDC71127C6B8D200B870D7 /* BasicExampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDC71027C6B8D200B870D7 /* BasicExampleUITests.swift */; };
 		46EDC71327C6B8D200B870D7 /* BasicExampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 46EDC71227C6B8D200B870D7 /* BasicExampleUITestsLaunchTests.swift */; };
 		46EDC72127C6B92C00B870D7 /* Segment in Frameworks */ = {isa = PBXBuildFile; productRef = 46EDC72027C6B92C00B870D7 /* Segment */; };
+		EABC7F33293F4C4600DC02BD /* SegmentBugsnag in Frameworks */ = {isa = PBXBuildFile; productRef = EABC7F32293F4C4600DC02BD /* SegmentBugsnag */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +46,7 @@
 		46EDC70C27C6B8D200B870D7 /* BasicExampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BasicExampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		46EDC71027C6B8D200B870D7 /* BasicExampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicExampleUITests.swift; sourceTree = "<group>"; };
 		46EDC71227C6B8D200B870D7 /* BasicExampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BasicExampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		EABC7F31293F4C3300DC02BD /* Bugsnag */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Bugsnag; path = ../..; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EABC7F33293F4C4600DC02BD /* SegmentBugsnag in Frameworks */,
 				46EDC72127C6B92C00B870D7 /* Segment in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -80,6 +83,7 @@
 				46EDC70527C6B8D200B870D7 /* BasicExampleTests */,
 				46EDC70F27C6B8D200B870D7 /* BasicExampleUITests */,
 				46EDC6F327C6B8D100B870D7 /* Products */,
+				EABC7F30293F4C3300DC02BD /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -129,6 +133,14 @@
 			path = BasicExampleUITests;
 			sourceTree = "<group>";
 		};
+		EABC7F30293F4C3300DC02BD /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EABC7F31293F4C3300DC02BD /* Bugsnag */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +159,7 @@
 			name = BasicExample;
 			packageProductDependencies = (
 				46EDC72027C6B92C00B870D7 /* Segment */,
+				EABC7F32293F4C4600DC02BD /* SegmentBugsnag */,
 			);
 			productName = BasicExample;
 			productReference = 46EDC6F227C6B8D100B870D7 /* BasicExample.app */;
@@ -604,6 +617,10 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 46EDC71F27C6B92C00B870D7 /* XCRemoteSwiftPackageReference "analytics-swift" */;
 			productName = Segment;
+		};
+		EABC7F32293F4C4600DC02BD /* SegmentBugsnag */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = SegmentBugsnag;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
