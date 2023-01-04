@@ -3,13 +3,6 @@
 //  BugsnagDestination
 //
 //  Created by Komal Dhingra on 12/06/22.
-//
-
-// NOTE: You can see this plugin in use in the BugsnagDestination application.
-//
-// This plugin is NOT SUPPORTED by Segment.  It is here merely as an example,
-// and for your convenience should you find it useful.
-//
 
 // MIT License
 //
