@@ -4,8 +4,9 @@
 import PackageDescription
 
 let package = Package(
-    name: "SegmentDestination",
+    name: "SegmentBugsnag",
     platforms: [
+        .macOS("10.15"),
         .iOS("13.0"),
         .tvOS("11.0"),
         .watchOS("7.1")
@@ -13,8 +14,8 @@ let package = Package(
     products: [
         // Products define the executables and libraries a package produces, and make them visible to other packages.
         .library(
-            name: "SegmentDestination",
-            targets: ["SegmentDestination"]),
+            name: "SegmentBugsnag",
+            targets: ["SegmentBugsnag"]),
     ],
     dependencies: [
         // Dependencies declare other packages that this package depends on.
@@ -23,14 +24,25 @@ let package = Package(
             name: "Segment",
             url: "https://github.com/segmentio/analytics-swift.git",
             from: "1.1.2"
+        ),
+        .package(
+            name: "Bugsnag",
+            url: "https://github.com/bugsnag/bugsnag-cocoa",
+            from: "6.25.0"
         )
     ],
     targets: [
         // Targets are the basic building blocks of a package. A target can define a module or a test suite.
         // Targets can depend on other targets in this package, and on products in packages this package depends on.
+//        .target(
+//            name: "SegmentDestination",
+//            dependencies: ["Segment"]),
         .target(
-            name: "SegmentDestination",
-            dependencies: ["Segment"]),
+            name: "SegmentBugsnag",
+            dependencies: ["Segment", .product(
+                name: "Bugsnag",
+                package: "Bugsnag")]),
+        
         
         // TESTS ARE HANDLED VIA THE EXAMPLE APP.
     ]
