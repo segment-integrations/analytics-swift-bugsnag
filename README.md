@@ -2,7 +2,6 @@
 
 Add BugSnag tracking support to your applications via this plugin for [Analytics-Swift](https://github.com/segmentio/analytics-swift)
 
-Note that this plugin simply adds session data for BugSnag, and events are sent via Cloud Mode.
 
 ## Adding the dependency
 
