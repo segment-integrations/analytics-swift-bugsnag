@@ -30,6 +30,11 @@ import Foundation
 import Segment
 import Bugsnag
 
+@objc(SEGBugsnagDestination)
+public class ObjCSegmentBugsnag: NSObject, ObjCDestination, ObjCDestinationShim {
+    public func instance() -> DestinationPlugin { return BugsnagDestination() }
+}
+
 public class BugsnagDestination: DestinationPlugin {
     public let timeline = Timeline()
     public let type = PluginType.destination
