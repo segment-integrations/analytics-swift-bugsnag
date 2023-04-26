@@ -6,8 +6,8 @@
         "repositoryURL": "https://github.com/segmentio/analytics-swift.git",
         "state": {
           "branch": null,
-          "revision": "26f23a2ae9b8dd47aeee1bdaa1e203f3bed6044e",
-          "version": "1.4.0"
+          "revision": "79fb17a5d4abf8f80e6a0935e57c7df7b670a6c0",
+          "version": "1.4.1"
         }
       },
       {
@@ -15,8 +15,8 @@
         "repositoryURL": "https://github.com/bugsnag/bugsnag-cocoa",
         "state": {
           "branch": null,
-          "revision": "5be1c4c544752c90774cf5b464683064a5bb1015",
-          "version": "6.26.1"
+          "revision": "c730af7a4676617d82394782300df997d9a356cd",
+          "version": "6.26.2"
         }
       },
       {

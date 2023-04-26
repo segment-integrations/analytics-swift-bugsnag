@@ -31,8 +31,8 @@ import Segment
 import Bugsnag
 
 @objc(SEGBugsnagDestination)
-public class ObjCSegmentBugsnag: NSObject, ObjCDestination, ObjCDestinationShim {
-    public func instance() -> DestinationPlugin { return BugsnagDestination() }
+public class ObjCSegmentBugsnag: NSObject, ObjCPlugin, ObjCPluginShim {
+    public func instance() -> EventPlugin { return BugsnagDestination() }
 }
 
 public class BugsnagDestination: DestinationPlugin {
